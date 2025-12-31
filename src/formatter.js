@@ -28,7 +28,7 @@ export const formatReport = (report) => {
     ----------------------------------
     ${Object.entries(report.counts)
       .map(([type, count]) => `${type}: ${count}`)
-      .join("\n")}
+      .join("\n    ")}
   `;
 
   return boxen(content, {
