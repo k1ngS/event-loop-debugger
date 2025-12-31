@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "@inquirer/prompts": "^8.1.0",
     "boxen": "^8.0.1",
