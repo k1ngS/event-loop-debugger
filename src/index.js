@@ -29,7 +29,19 @@ const file = await select({
         "In Node.js schedules a function (callback) to run as soon as the current event loop cycle finishes its I/P polling phase, execution it before any setTimeout or setInterval scheduled for the next cycle, making it ideal for deferring tasks asynchronously to avoid blocking the event loop and ensure non-blocking I/O.",
     },
     {
-      name: "5. Mixed Events",
+      name: "5. I/O Callbacks",
+      value: "io-callbacks",
+      description:
+        "Demonstrates the I/O callbacks phase of the Event Loop, where callbacks from asynchronous I/O operations (like fs.readFile, dns.lookup) are executed after timers but before setImmediate.",
+    },
+    {
+      name: "6. Close Callbacks",
+      value: "close-callbacks",
+      description:
+        "Demonstrates the close callbacks phase, the LAST phase of the Event Loop, where close event callbacks (like socket.on('close'), server.close()) are executed after all other phases.",
+    },
+    {
+      name: "7. Mixed Events",
       value: "mixed-events",
       description: "It' a mixture of all of the above events.",
     },
