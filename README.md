@@ -168,10 +168,15 @@ A ordem típica demonstrada: 1 → 4 → 5 → 3 → 2
 ## 🗺️ Roadmap
 
 ### v1.0 (Atual) ✅
-- [ ] Visualização das 6 fases
-- [ ] Exemplos interativos
-- [ ] Export para JSON
+- [x] Visualização das 6 fases
+- [x] Exemplos interativos (promise-chain, async-await, settimeout, setimmediate, io-callbacks, close-callbacks, mixed-events)
 - [x] Menu CLI
+- [ ] Export para JSON
+
+### v2.0 (Próxima)
+- [ ] Gráficos e diagramas visuais
+- [ ] Modo watch/live
+- [ ] Métricas de performance
 
 ## 🤝 Contribuindo
 
