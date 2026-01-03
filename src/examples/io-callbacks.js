@@ -2,26 +2,6 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
-/*
- * ==========================================
- * Event Loop - Fase 2: I/O CALLBACKS
- * ==========================================
- *
- * Esta fase executa callbacks de operações de I/O que foram completadas,
- * como fs.readFile(), dns.lookup(), conexões de rede, etc.
- *
- * Ordem de Execução Esperada:
- * ┌─────────────────────────────────────┐
- * │ 1. Código Síncrono                  │
- * │ 2. Microtasks (process.nextTick)    │
- * │ 3. Timers (setTimeout)              │
- * │ 4. I/O Callbacks (fs.readFile) ←──  │ ESTA FASE
- * │ 5. setImmediate                     │
- * └─────────────────────────────────────┘
- *
- * I/O callbacks executam DEPOIS dos timers mas ANTES do setImmediate
- */
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 

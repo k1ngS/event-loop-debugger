@@ -2,27 +2,6 @@ import net from "net";
 import fs from "fs";
 import { Readable } from "stream";
 
-/*
- * ==========================================
- * Event Loop - Fase 6: CLOSE CALLBACKS
- * ==========================================
- *
- * Esta é a ÚLTIMA fase do Event Loop. Executa callbacks de eventos
- * de fechamento como socket.on('close'), server.close(), stream.on('close').
- *
- * Ordem de Execução Esperada:
- * ┌─────────────────────────────────────┐
- * │ 1. Código Síncrono                  │
- * │ 2. Microtasks (process.nextTick)    │
- * │ 3. Timers (setTimeout)              │
- * │ 4. I/O Callbacks                    │
- * │ 5. setImmediate                     │
- * │ 6. Close Callbacks ←───────────────  │ ESTA FASE (ÚLTIMA)
- * └─────────────────────────────────────┘
- *
- * Close callbacks são executados por ÚLTIMO no ciclo do Event Loop
- */
-
 console.log("1. [SÍNCRONO] Iniciando exemplo de Close Callbacks\n");
 
 // Timer - Fase 1 do Event Loop
